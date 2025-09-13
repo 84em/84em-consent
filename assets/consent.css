@@ -1,0 +1,140 @@
+/* 84EM Consent Banner Styles */
+.e84-consent-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0f0f10;
+    color: #ffffff;
+    padding: 1rem;
+    border-top: 1px solid #2a2a2a;
+    z-index: 999999;
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.e84-consent-banner[hidden] {
+    display: none !important;
+}
+
+.e84-consent-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.e84-consent-content {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex: 1;
+}
+
+.e84-consent-logo {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.e84-consent-text {
+    margin: 0;
+    flex: 1;
+}
+
+.e84-consent-buttons {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.e84-consent-button {
+    border: none;
+    padding: 0.625rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    font-size: 14px;
+    transition: opacity 0.2s ease, transform 0.1s ease;
+    white-space: nowrap;
+    font-family: inherit;
+}
+
+.e84-consent-button-primary {
+    background: var(--e84-consent-accent, #CC3000);
+    color: #ffffff;
+}
+
+.e84-consent-button-secondary {
+    background: transparent;
+    color: var(--e84-consent-accent, #CC3000);
+    border: 1px solid var(--e84-consent-accent, #CC3000);
+}
+
+.e84-consent-button:hover {
+    opacity: 0.9;
+}
+
+.e84-consent-button:active {
+    transform: scale(0.98);
+}
+
+.e84-consent-button:focus-visible {
+    outline: 2px solid var(--e84-consent-accent, #CC3000);
+    outline-offset: 2px;
+}
+
+.e84-consent-button-secondary:hover {
+    background: var(--e84-consent-accent, #CC3000);
+    color: #ffffff;
+}
+
+/* Mobile responsive */
+@media (max-width: 640px) {
+    .e84-consent-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+
+    .e84-consent-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .e84-consent-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .e84-consent-button {
+        width: 100%;
+    }
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .e84-consent-button {
+        transition: none;
+    }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .e84-consent-banner {
+        border-top-width: 2px;
+    }
+
+    .e84-consent-button {
+        border: 2px solid transparent;
+    }
+
+    .e84-consent-button:focus-visible {
+        outline-width: 3px;
+    }
+}

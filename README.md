@@ -34,9 +34,9 @@ Customize the banner via the `84em_consent_simple_config` filter:
 add_filter('84em_consent_simple_config', function($config) {
     $config['brand_name'] = '84EM';
     $config['accent_color'] = '#CC3000';
-    $config['banner_text'] = 'We use only essential cookies for security and performance (Cloudflare).';
+    $config['banner_text'] = 'We use only essential cookies for security and performance.';
     $config['policy_url'] = '/privacy-policy/';
-    $config['cookie_version'] = '2025-01-13';
+    $config['cookie_version'] = '2025-09-13';
     $config['cookie_duration'] = 180; // days
     $config['show_for_logged_in'] = false;
 

@@ -54,6 +54,7 @@ echo "📋 Copying plugin files..."
 cp -r assets "$BUILD_DIR/$PLUGIN_NAME/"
 cp 84em-consent.php "$BUILD_DIR/$PLUGIN_NAME/"
 cp README.md "$BUILD_DIR/$PLUGIN_NAME/"
+cp CHANGELOG.md "$BUILD_DIR/$PLUGIN_NAME/"
 
 # Remove source files from build (keep only minified)
 rm -f "$BUILD_DIR/$PLUGIN_NAME/assets/consent.css"

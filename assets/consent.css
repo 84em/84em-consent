@@ -108,12 +108,14 @@
     }
 
     .e84-consent-buttons {
-        flex-direction: column;
+        justify-content: center;
         width: 100%;
     }
 
     .e84-consent-button {
-        width: 100%;
+        flex: 1;
+        min-width: 0;
+        padding: 0.625rem 1rem;
     }
 }
 

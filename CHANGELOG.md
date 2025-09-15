@@ -5,6 +5,12 @@ All notable changes to the 84EM Consent plugin will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.1.2] - 2025-09-15
+
+### Changed
+- Updated `wp_enqueue_script()` to use array syntax for the `in_footer` parameter instead of boolean
+- Changed secondary button text color from accent color to white for better contrast
+
 ## [1.1.1] - 2025-09-14
 
 ### Removed

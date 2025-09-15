@@ -70,7 +70,7 @@
 
 .e84-consent-button-secondary {
     background: transparent;
-    color: var(--e84-consent-accent, #CC3000);
+    color: #fff;
     border: 1px solid var(--e84-consent-accent, #CC3000);
 }
 

@@ -90,7 +90,7 @@ class SimpleConsent {
             plugin_dir_url( __FILE__ ) . 'assets/consent.min.js',
             [],
             $this->config['cookie_version'],
-            [ 'in_footer' => true ],
+            [ 'in_footer' => true, 'strategy' => 'async' ],
         );
 
         // Localize script with configuration

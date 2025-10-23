@@ -118,10 +118,10 @@ window.e84ConsentAPI.resetConsent();
 - Mobile browsers (iOS Safari, Chrome Mobile)
 - Graceful degradation for older browsers
 
+## Author
+
+Andrew Miller @ 84EM - [https://84em.com/](https://84em.com/)
+
 ## License
 
-GPL v2 or later
-
-## Support
-
-[84em.com](https://84em.com)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.

@@ -64,14 +64,14 @@
 }
 
 .e84-consent-button-primary {
-    background: var(--e84-consent-accent, #CC3000);
+    background: var(--e84-consent-accent, #D45404);
     color: #ffffff;
 }
 
 .e84-consent-button-secondary {
     background: transparent;
     color: #fff;
-    border: 1px solid var(--e84-consent-accent, #CC3000);
+    border: 1px solid var(--e84-consent-accent, #D45404);
 }
 
 .e84-consent-button:hover {
@@ -83,12 +83,12 @@
 }
 
 .e84-consent-button:focus-visible {
-    outline: 2px solid var(--e84-consent-accent, #CC3000);
+    outline: 2px solid var(--e84-consent-accent, #D45404);
     outline-offset: 2px;
 }
 
 .e84-consent-button-secondary:hover {
-    background: var(--e84-consent-accent, #CC3000);
+    background: var(--e84-consent-accent, #D45404);
     color: #ffffff;
 }
 
